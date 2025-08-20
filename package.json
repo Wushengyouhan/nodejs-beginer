@@ -4,8 +4,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc:compile": " npx tsc 21_ts运行环境/1_index.ts"
+    "tsc:compile": " npx tsc 21_ts运行环境/1_index.ts",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +18,9 @@
     "axios": "^1.11.0",
     "javascript-stringify": "^2.1.0",
     "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@vitest/ui": "^3.2.4",
+    "vitest": "^3.2.4"
   }
 }
